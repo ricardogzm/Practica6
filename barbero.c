@@ -4,11 +4,11 @@
 
 void barbero(int semaforos, int cortes, int **clEsperando) {
     FILE *fd;
-
-    while (1){
         fd= fopen("barbero.txt", "a");
-        fprintf(fd,"El barbero esta: Dormido\n Cortes hechos: %d \n", cortes);
+        fprintf(fd,"El barbero esta: Dormido.\n Cortes hechos: %d \n", cortes);
         fclose(fd);
+    while (1){
+
         manejarSemaforo(semaforos, clientes, down); //barbero durmiendo si hay 0 clientes
         manejarSemaforo(semaforos, mutex, down); //espera para adquirir acceso a sillas disponibles
 
