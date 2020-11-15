@@ -18,6 +18,6 @@
 
 
 
-int iniciarSemaforo(semkey);
+int iniciarSemaforo(key_t semkey);
 
 int manejarSemaforo(int semid, int numsem, int op);
