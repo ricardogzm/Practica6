@@ -31,7 +31,7 @@ int main(){
         barbero(semaforos, cortes, &clEsperando);
     }
     if(fork()==0) {
-        barbero(semaforos, cortes, &clEsperando);//Cliente
+        cliente(semaforos, &clEsperando);//Cliente
     }
 
 }

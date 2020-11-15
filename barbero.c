@@ -6,7 +6,6 @@ void barbero(int semaforos, int cortes, int **clEsperando) {
     FILE *fd;
     fd= fopen("barbero.txt", "w");
     while (1){
-        system("clear");
         fprintf(fd,"El barbero esta: Dormido\n Cortes hechos: %d \n", cortes);
 
         manejarSemaforo(semaforos, clientes, down); //barbero durmiendo si hay 0 clientes
@@ -14,7 +13,6 @@ void barbero(int semaforos, int cortes, int **clEsperando) {
 
         (*clEsperando) = (*clEsperando) - 1; //decrementar un cliente en la lista de espera
         cortes++; //aumenta el numero de cortes
-        system("clear");
         fprintf(fd,"El barbero esta: ocupado \n Cortes hechos: %d \n", cortes);
         sleep(5);
 
