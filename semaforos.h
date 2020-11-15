@@ -15,6 +15,7 @@
 #define barberoDisponible 0 //mutex para desponivilidad de barbero
 #define clientes 2 //semaforo de clientes en la sala de espera
 #define sillas 10 //Total de sillas
+#define SEMPERM 0600
 
 
 
