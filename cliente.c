@@ -23,7 +23,9 @@ void cliente(int semaforos, int **clEsperando) {
                     fprintf(fd,"la peluqueria esta llena \n");
                     manejarSemaforo(semaforos, mutex, up); //la peluqueria esta llena. no esperar
                 }
+                exit(0);
             }
+            sleep(2);
         }
     }
     fclose(fd);
