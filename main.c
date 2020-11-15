@@ -34,4 +34,7 @@ int main(){
         cliente(semaforos, &clEsperando);//Cliente
     }
 */
+    while (1){
+
+    }
 }
