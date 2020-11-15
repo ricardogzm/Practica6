@@ -21,6 +21,7 @@ void cliente(int semaforos, int **clEsperando) {
                     fprintf(fd,"el cliente %d fue atendido \n", getpid());  //sentarse en la silla del barbero y ser atendido
                     fclose(fd);
                 } else {
+                    fd= fopen("cliente.txt", "a");
                     fprintf(fd,"la peluqueria esta llena \n");
                     fclose(fd);
                     manejarSemaforo(semaforos, mutex, up); //la peluqueria esta llena. no esperar
@@ -28,5 +29,6 @@ void cliente(int semaforos, int **clEsperando) {
                 exit(0);
             }
         }
+        sleep(10)
     }
 }
