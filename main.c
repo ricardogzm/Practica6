@@ -30,10 +30,10 @@ int main(){
     if(fork()==0) {
         barbero(semaforos, cortes, &clEsperando);
     }
-    /*if(fork()==0) {
+    if(fork()==0) {
         cliente(semaforos, &clEsperando);//Cliente
     }
-*/
+
     while (1){
 
     }

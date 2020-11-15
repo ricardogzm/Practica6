@@ -4,9 +4,8 @@
 
 void barbero(int semaforos, int cortes, int **clEsperando) {
     FILE *fd;
-    printf("antes");
+
     while (1){
-        printf("despues");
         fd= fopen("barbero.txt", "a");
         fprintf(fd,"El barbero esta: Dormido\n Cortes hechos: %d \n", cortes);
         fclose(fd);
