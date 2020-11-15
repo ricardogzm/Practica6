@@ -6,8 +6,13 @@ int main(){
     int memoria, *clEsperando; //Recurso compartido entre los procesos
     int semaforos; //semaforos
     int cortes=0;
+    FILE *fd;
     key_t semkey = 0x100;
     key_t shmkey = 0x200;
+    fd= fopen("cliente.txt", "w");
+    fclose(fd);
+    fd= fopen("barbero.txt", "w");
+    fclose(fd);
 
     if((semaforos = iniciarSemaforo(semkey)) < 0){ //inicializacion de semaforos
         exit(1); //si fallo al iniciar termina el proceso
