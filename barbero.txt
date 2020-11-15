@@ -1,0 +1,6 @@
+El barbero esta: Dormido
+ Cortes hechos: 0 
+El barbero esta: ocupado 
+ Cortes hechos: 1 
+El barbero esta: Dormido
+ Cortes hechos: 1 
