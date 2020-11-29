@@ -8,5 +8,5 @@
 #include <sys/shm.h>
 
 
-void barbero(int semaforos, int cortes, int **clEsperando);
-void cliente(int semaforos, int **clEsperando);
+void barbero(int semaforos, int cortes);
+void cliente(int semaforos);
